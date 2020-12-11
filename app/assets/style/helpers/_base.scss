@@ -8,6 +8,7 @@ ul{
 }
 a{
   text-decoration: none;
+  // 為什麼我在這邊設定下底線 none 會沒有效果，但在 右鍵->檢查 時，是有被寫進去的
 }
 p{
   margin-bottom: 0;
