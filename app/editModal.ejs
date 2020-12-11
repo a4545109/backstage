@@ -1,0 +1,59 @@
+<div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title fs-3 font-weight-bold" id="exampleModalLabel">Edit Admin</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h2 class="fs-3 font-weight-bold">Account</h2>
+        <label for="userName" class="modal-name d-block">Name</label>
+        <input type="text" class="btn bg-primary-lighter text-left w-100 mb-3" id="userName" placeholder="Emir Wicks">
+        <label for="email" class="modal-emaill d-block">Email</label>
+        <input type="Email" class="btn bg-primary-lighter text-left w-100 mb-4" id="email" placeholder="emir.wicks@mail.com">
+        <hr class="mb-4">
+        <h2 class="fs-3 font-weight-bold mb-3">Verification</h2>
+        <div class="d-flex justify-content-between">
+          <div class="d-flex align-items-center mb-3">
+            <span class="material-icons">
+            check_circle
+            </span>
+            <span class="verified-text fs-2">Verified</span>
+          </div>
+          <span class="edit-time">2020/4/12</span>
+        </div>
+        <button type="button" class="btn btn-outline-primary-lighter w-100 mb-4">Send Verification Mail</button>
+        <hr class="mb-4">
+        <h2 class="fs-3 font-weight-bold mb-3">Access Level</h2>
+        <select name="" id="" class="p-3 mb-4 w-100">
+          <option value="admin">admin</option>
+        </select>
+        <hr class="mb-4">
+        <h2 class="fs-3 font-weight-bold mb-3">Custom Access</h2>
+        <label class="d-block"><input type="checkbox" name="custom" value="lecture"
+            class="mr-1"><span>lecture</span></label>
+        <label class="d-block"><input type="checkbox" name="custom" value="Coupon"
+            class="mr-1"><span>Coupon</span></label>
+        <label class="d-block"><input type="checkbox" name="custom" value="Message"
+            class="mr-1"><span>Message</span></label>
+        <label class="d-block"><input type="checkbox" name="custom" value="Setting"
+            class="mr-1"><span>Setting</span></label>
+        <label class="d-block mb-3"><input type="checkbox" name="custom" value="task menu" class="mr-1"><span>task
+            menu</span></label>
+        <hr class="mb-4">
+        <h2 class="deactivate-text fs-3 font-weight-bold">Deactivate Account</h2>
+        <div class="alert-text d-flex align-items-center text-alert">
+          <span class="material-icons">report_problem</span><span>This cannot be undone!</span>
+        </div>
+        <button type="button" class="alert-btn btn btn-outline-alert w-100">Deactivate This Account</button>
+      </div>
+      <div class="text-right pr-5 mb-3">
+        <button type="button" class="btn btn-outline-primary mr-3" data-dismiss="modal">Cancel</button>
+        <button type="button" class="btn btn-primary">Update</button>
+      </div>
+    </div>
+  </div>
+</div>

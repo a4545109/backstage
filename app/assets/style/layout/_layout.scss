@@ -1,0 +1,20 @@
+body{
+  font-family: "Roboto", "Noto Sans TC", sans-serif;
+}
+.sidebar{
+  padding: 32px 80px 32px 32px;
+  width: 30%;
+  .logo{
+    background-image: url("../../assets/images/logo-ANSWER.svg");
+    width: 151px;
+    height: 40px;
+    display: block;
+    text-indent: 101%;
+    overflow: hidden;
+    white-space:nowrap;
+  }
+  .sideItem{
+    margin-bottom: 29px;
+  }
+}
+
