@@ -1,7 +1,4 @@
-body{
-  font-family: "Roboto", "Noto Sans TC", sans-serif;
-}
-.sidebar{
+.navbar{
   padding: 32px 80px 32px 32px;
   width: 30%;
   .logo{
@@ -13,8 +10,14 @@ body{
     overflow: hidden;
     white-space:nowrap;
   }
-  .sideItem{
+  .navbarItem{
     margin-bottom: 29px;
+    a{
+      color: #000;
+      &:hover{
+        color: #2A8356;
+      }
+    }
   }
 }
 
