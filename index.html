@@ -12,23 +12,23 @@
 
 <body>
   <div class="d-flex">
-    <!-- sidebar -->
-    <div class="sidebar bg-primary-lighter d-flex flex-column justify-content-between">
+    <!-- navbar -->
+    <div class="navbar bg-primary-lighter d-flex flex-column justify-content-between">
       <div class="nav d-flex flex-column">
         <h1 class="mb-5"><a href="#" class="logo">ANSWER</a></h1>
         <ul>
-          <li class="sideItem"><a href="#" class="text-dark d-flex align-content-center"><span
-                class="material-icons mr-3">insert_chart</span>Dashboard</a></li>
-          <li class="sideItem"><a href="#" class="text-dark d-flex align-items-center"><span
-                class="material-icons mr-3">forum</span>Question</a></li>
-          <li class="sideItem"><a href="index.html"" class="text-dark d-flex align-items-center"><span
-                class="material-icons mr-3">assignment</span>Assignment</a></li>
-          <li class="sideItem"><a href="#" class="text-dark d-flex align-items-center"><span
-                class="material-icons mr-3">video_library</span>Course</a></li>
-          <li class="sideItem"><a href="admin.html" class="text-dark d-flex align-items-center"><span
-                class="material-icons mr-3">supervisor_account</span>Admin</a></li>
-          <li class="sideItem"><a href="#" class="text-dark d-flex align-items-center"><span
-                class="material-icons mr-3">settings</span>Settings</a></li>
+          <li class="navbarItem"><a href="#" class="d-flex align-content-center">
+            <span class="material-icons mr-3">insert_chart</span>Dashboard</a></li>
+          <li class="navbarItem"><a href="#" class="d-flex align-items-center">
+            <span class="material-icons mr-3">forum</span>Question</a></li>
+          <li class="navbarItem"><a href="index.html" class="d-flex align-items-center">
+            <span class="material-icons mr-3">assignment</span>Assignment</a></li>
+          <li class="navbarItem"><a href="#" class="d-flex align-items-center">
+            <span class="material-icons mr-3">video_library</span>Course</a></li>
+          <li class="navbarItem"><a href="admin.html" class="d-flex align-items-center">
+            <span class="material-icons mr-3">supervisor_account</span>Admin</a></li>
+          <li class="navbarItem"><a href="#" class="d-flex align-items-center">
+            <span class="material-icons mr-3">settings</span>Settings</a></li>
         </ul>
       </div>
       <div class="d-flex align-items-center">
@@ -41,13 +41,22 @@
     </div>
     <div class="main w-100">
       <!-- courses -->
-<div class="courses w-100 p-5">
+<div class="courses p-5">
   <div class="d-flex justify-content-between">
     <div class="header d-flex">
       <h2 class="header-title fs-4">Assignment</h2>
-      <h3 class="header-subtitle fs-2 d-flex align-items-center">All Courses
-        <span class="material-icons text-primary">expand_more</span>
-      </h3>
+      <div class="dropdown">
+        <a class="fs-2 d-flex align-items-center text-dark" href="#" role="button" id="dropdownMenuLink"
+          data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          All Courses
+          <span class="material-icons text-primary">expand_more</span>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </div>
     </div>
     <div class="d-flex">
       <a href="#" class="text-dark"><span class="search material-icons">search</span></a>
@@ -55,55 +64,61 @@
     </div>
   </div>
   <div class="d-flex justify-content-between">
-    <h3 class="fs-2 d-flex align-items-center">All (4)<span class="allText material-icons text-primary">expand_more</span></h3>
-    <span class="comment gray-light">2 comments</span>
+    <h3 class="fs-2 d-flex align-items-center" data-toggle="collapse" href="#collapseExample" role="button"
+      aria-expanded="false">All (4)<span class="allText material-icons text-primary">expand_more</span></h3>
+    <span class="comment gray-light"><small>2 comments</small></span>
   </div>
 
-  <div class="d-flex">
+
+  <div class="d-flex justify-content-between">
     <!-- courses -->
-    <ul class="courses w-35 mr-3">
-      <li
-        class="coursesItem d-flex justify-content-between border border-bottom-0 border-primary-light bg-primary-lighter">
-        <div class="courseContent">
-          <h2 class="coursesSubtitle fs-1">Chapter Assignment 2</h2>
-          <p class="coursesText fs-2 font-weight-bold">Please check this file…</p>
-        </div>
-        <div>
-          <h3 class="coursesTime fs-1">4 hrs ago</h3>
-          <h3 class="fs-1 text-gray">Emily Wang</h3>
-        </div>
-      </li>
-      <li class="coursesItem d-flex justify-content-between border border-bottom-0 border-primary-light">
-        <div class="courseContent">
-          <h2 class="coursesSubtitle fs-1">Chapter Assignment 1</h2>
-          <p class="coursesText fs-2 font-weight-bold">My Homework</p>
-        </div>
-        <div>
-          <h3 class="coursesTime fs-1">12 hrs ago</h3>
-          <h3 class="fs-1 text-gray">David Xu</h3>
-        </div>
-      </li>
-      <li class="coursesItem d-flex justify-content-between border border-bottom-0 border-primary-light">
-        <div class="courseContent">
-          <h2 class="coursesSubtitle fs-1">Chapter Assignment 1</h2>
-          <p class="coursesText fs-2 font-weight-bold">Have a problem with this…</p>
-        </div>
-        <div>
-          <h3 class="coursesTime fs-1">12 hrs ago</h3>
-          <h3 class="fs-1 text-gray">David Xu</h3>
-        </div>
-      </li>
-      <li class="coursesItem d-flex justify-content-between border border-primary-light">
-        <div class="courseContent">
-          <h2 class="coursesSubtitle fs-1">Chapter Assignment 1</h2>
-          <p class="coursesText fs-2 font-weight-bold">Did I do it right?</p>
-        </div>
-        <div>
-          <h3 class="coursesTime fs-1">12 hrs ago</h3>
-          <h3 class="fs-1 text-gray">David Xu</h3>
-        </div>
-      </li>
-    </ul>
+    <div style="width: 400px;">
+      <div class="collapse show" id="collapseExample">
+        <ul class="mr-3">
+          <li
+            class="coursesItem d-flex justify-content-between border border-bottom-0 border-primary-light bg-primary-lighter">
+            <div class="courseContent">
+              <h2 class="coursesSubtitle fs-1">Chapter Assignment 2</h2>
+              <p class="coursesText fs-2 font-weight-bold">Please check this file…</p>
+            </div>
+            <div>
+              <h3 class="coursesTime fs-1">4 hrs ago</h3>
+              <h3 class="fs-1 text-gray">Emily Wang</h3>
+            </div>
+          </li>
+          <li class="coursesItem d-flex justify-content-between border border-bottom-0 border-primary-light">
+            <div class="courseContent">
+              <h2 class="coursesSubtitle fs-1">Chapter Assignment 1</h2>
+              <p class="coursesText fs-2 font-weight-bold">My Homework</p>
+            </div>
+            <div>
+              <h3 class="coursesTime fs-1">12 hrs ago</h3>
+              <h3 class="fs-1 text-gray">David Xu</h3>
+            </div>
+          </li>
+          <li class="coursesItem d-flex justify-content-between border border-bottom-0 border-primary-light">
+            <div class="courseContent">
+              <h2 class="coursesSubtitle fs-1">Chapter Assignment 1</h2>
+              <p class="coursesText fs-2 font-weight-bold">Have a problem with this…</p>
+            </div>
+            <div>
+              <h3 class="coursesTime fs-1">12 hrs ago</h3>
+              <h3 class="fs-1 text-gray">David Xu</h3>
+            </div>
+          </li>
+          <li class="coursesItem d-flex justify-content-between border border-primary-light">
+            <div class="courseContent">
+              <h2 class="coursesSubtitle fs-1">Chapter Assignment 1</h2>
+              <p class="coursesText fs-2 font-weight-bold">Did I do it right?</p>
+            </div>
+            <div>
+              <h3 class="coursesTime fs-1">12 hrs ago</h3>
+              <h3 class="fs-1 text-gray">David Xu</h3>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
     <!-- courses end -->
 
     <!-- reply -->
@@ -122,7 +137,8 @@
           <div class="userContent">
             <h2 class="user-name fs-2 font-weight-bold">Emily Wang</h2>
             <h3 class="user-time text-gray-light fs-1 mb-3">10:38 AM (4 hours ago)</h3>
-            <p class="userText mb-3">Hi Teacher, the attached file is my homework of chapter 2. And here comes a question:
+            <p class="userText mb-3">Hi Teacher, the attached file is my homework of chapter 2. And here comes a
+              question:
               Why
               in the following code the height of the <span class="bg-primary-lighter text-primary">div</span> is bigger
               than the height of the <span class="bg-primary-lighter text-primary">img</span> ? There is a gap below
@@ -151,7 +167,8 @@
                   <a href="#" class="text-dark"><span class="material-icons">create</span></a>
                 </div>
               </div>
-              <p class="userText mb-5">Hi David, by default, an image is rendered inline, like a letter so it sits on the
+              <p class="userText mb-5">Hi David, by default, an image is rendered inline, like a letter so it sits on
+                the
                 same
                 line that a, b, c and d sit on. There is space below that line for the descenders you find on letters
                 like
@@ -168,8 +185,7 @@
 
         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
           <div class="replyEdit">
-            <div
-              class="bodyText d-flex align-items-center justify-content-between bg-primary-lighter border border-bottom-0 border-primary-light">
+            <div class="bodyText d-flex align-items-center justify-content-between bg-primary-lighter border border-bottom-0 border-primary-light">
               <span class="d-flex align-items-center font-weight-bold">Body Text
                 <span class="material-icons">
                   arrow_drop_down
@@ -197,11 +213,11 @@
       <div class="replyGroup">
         <div class="d-flex justify-content-between align-items-center">
           <div class="direction">
-            <span class="material-icons">chevron_left</span>
-            <span class="material-icons">chevron_right</span>
+            <a href="#"><span class="material-icons">chevron_left</span></a>
+            <a href="#"><span class="material-icons">chevron_right</span></a>
           </div>
           <div>
-            <button type="button" class="btn btn-outline-primary text-primary mr-3">Mark as read</button>
+            <button type="button" class="btn btn-outline-primary mr-3">Mark as read</button>
             <button type="button" class="replyBtn btn btn-primary text-white" data-toggle="collapse"
               data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">Reply</button>
           </div>

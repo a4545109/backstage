@@ -9495,6 +9495,9 @@ a.text-alert:hover, a.text-alert:focus {
     color: inherit;
     border-color: #dee2e6; } }
 
+body {
+  font-family: "Roboto", "Noto Sans TC", sans-serif; }
+
 img {
   max-width: 100%;
   height: auto; }
@@ -9529,13 +9532,10 @@ hr {
   background-size: cover;
   background-repeat: no-repeat; }
 
-body {
-  font-family: "Roboto", "Noto Sans TC", sans-serif; }
-
-.sidebar {
+.navbar {
   padding: 32px 80px 32px 32px;
   width: 30%; }
-  .sidebar .logo {
+  .navbar .logo {
     background-image: url("../../assets/images/logo-ANSWER.svg");
     width: 151px;
     height: 40px;
@@ -9543,8 +9543,12 @@ body {
     text-indent: 101%;
     overflow: hidden;
     white-space: nowrap; }
-  .sidebar .sideItem {
+  .navbar .navbarItem {
     margin-bottom: 29px; }
+    .navbar .navbarItem a {
+      color: #000; }
+      .navbar .navbarItem a:hover {
+        color: #2A8356; }
 
 .header {
   margin-bottom: 44px; }
